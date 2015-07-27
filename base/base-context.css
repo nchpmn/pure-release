@@ -4,6 +4,10 @@ Copyright 2014 Yahoo! Inc. All rights reserved.
 Licensed under the BSD License.
 https://github.com/yahoo/pure/blob/master/LICENSE.md
 */
+/*
+CSS Files such as Normalize.css contain styles that apply globally to all native HTML elements.
+This version selects HTML elements only when they descend from the .yui3-normalized classname.
+*/
 /*!
 normalize.css v^3.0 | MIT License | git.io/normalize
 Copyright (c) Nicolas Gallagher and Jonathan Neal
