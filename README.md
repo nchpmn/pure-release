@@ -37,8 +37,7 @@ File Naming
   provide the base on which the rest of the module's styles build.
 
 * `[module]-nr.css`: Rollup of `[module]-core.css` + `[module].css` +
-  `[module]-[feature].css` from the `src/[module]/` dir. This is the
-  non-responsive version of a module.
+  `[module]-[feature].css`. This is the non-responsive version of a module.
 
 * `[module].css`: Rollup of `[module]-nr.css` + `[module]-r.css` from the
   `build/` dir. This is the responsive version of a module.
@@ -46,7 +45,7 @@ File Naming
 * `grids-responsive.css`: Unminified version of Pure's grid stylesheet which 
   includes @media queries.
 
-* `*-min.css`: A minified file version of the files of the same name.
+* `*.min.css`: A minified file version of the files of the same name.
 
 ### Rollup Builds
 
