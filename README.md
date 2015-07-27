@@ -4,10 +4,40 @@ Pure
 
 [![Pure](https://cloud.githubusercontent.com/assets/449779/5291099/1b554cca-7b03-11e4-9157-53a12d91b34a.png)][Pure]
 
-A set of small, responsive CSS modules that you can use in every web project.
+A set of small, responsive CSS modules that you can use in every web project (but customised to the way I want it).
 [http://purecss.io/][Pure]
 
-[![Build Status](http://img.shields.io/travis/yahoo/pure.svg?style=flat)][Build Status]
+
+What's Different?
+-----------------
+
+In this fork I am integrating two main features: a 12-column grid, and grid offset classes.
+
+### 12-Column Grid
+
+Generated form PureCSS's own [Starter Kit](http://purecss.io/start/?cols=12&prefix=.col-&sm=35.5em&md=48em&lg=64em&xl=80em#build-your-pure-starter-kit), this 12-column grid also features a more familiar and user-friendly class name: `.col`
+
+### Grid Offset
+
+PureCSS currently offers no solutions to offset the grid, which I consider to be a key feature in laying out content. The developers' reasoning behind this omission aside, I recognise the following workaround that uses only Vanilla PureCSS:
+
+```html
+<div class="pure-g">
+    <div class="pure-u-1-3">&nbsp;</div>
+    <p class="pure-u-1-3">This would be displayed in the middle third.</p>
+</div>
+```
+
+I find this to be clunky and awkward, especially considering the comparable code following this implementation:
+
+```html
+<div class="pure-g">
+    <p class="pure-u-1-3 pure-u-offset-1-3">This would be displayed in the middle third.</p>
+</div>
+```
+
+Installation & Use
+------------------
 
 **Use From the CDN:**
 
